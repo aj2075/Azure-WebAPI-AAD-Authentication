@@ -6,11 +6,14 @@ This article shows you how to invoke an Azure AD protected Web API from any clie
 - Web API is deployed to Azure App Service
 - Web API is protected by Azure AD Authentication
 
-Any client (native,mobile or another web service) deployed anywhere will be able to access the Web API with the bearer token.
+The above described flow involves aquiring a bearer token from Azure AD token service and then invoking the Web API with that token.
 
-It provides step by step instructions for doing the following
+This document provides step by step instructions for doing the following
 
 - build a simple Web API with ASP.Net Core
+- deploy the Web API to Azure App Service
+- enable Azure AD authentication for the Web API
+- successfully invoke the API from Postman using the bearer token obtained from Azure AD.
 
 
 ## Prerequisites
