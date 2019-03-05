@@ -31,7 +31,7 @@ This document provides step by step instructions for doing the following
 
 First make sure you have successfully installed .Net Core and Git on your desktop. Then open a command propmt either directly or from visual studio code (Terminal > new Terminal). It's perfectly fine if you chose not to install visual studio code, just open the command prompt by typing "cmd" in the search box in the lowerleft corner. 
  
-   **1. Run the following command in the command shell to create a Web API starter project**
+**a. Run the following command in the command shell to create a Web API starter project**
 ```msdos
 dotnet new webapi -o RetailApi
 ```
@@ -86,7 +86,7 @@ please visit [Build a web API with ASP.NET Core](https://docs.microsoft.com/en-u
    
    ![git clone](/images/deploymenturl.PNG)
    
-**3 Initializ,stage and commit all your applicatin files to your local git repo on your desktop**
+**c Initializ,stage and commit all your applicatin files to your local git repo on your desktop**
 
 1. Change directories to the "RetailApi" folder (created in step 1: Build a simple Web API...) in your command shell and type the following command 
 
@@ -110,7 +110,11 @@ please visit [Build a web API with ASP.NET Core](https://docs.microsoft.com/en-u
    ```
     git commit -m "Initial Commit" 
    ```
-   
+**d Add Remote for the local Git Repo  to connect the local git to Azure git , using the git clone uri from step b**
+**e Push local code to Azure**
+**e Verify code is uploaded to Azure**
+**e Verify API in Azure**
+
 ## 3.Enable Azure AD authentication for the Web API
 
 ## 4.Invoke the API from Postman using the bearer token obtained from Azure AD
