@@ -1,6 +1,10 @@
-# Welcome to GitHub Pages
+# Accessing Azure App Service Web API  using Azure AD bearer token
 
 ## Summary
+This article shows you how to invoke an Azure AD protected Web API deployed to Azure App Service from any client (native or web) using a bearer token. It provides step by step instructions for doing the following
+
+- build a simple Web API with ASP.Net Core
+
 
 ## Prerequisites
 1. [Install Git](https://git-scm.com/)
