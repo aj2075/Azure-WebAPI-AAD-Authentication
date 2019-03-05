@@ -1,7 +1,7 @@
 # Accessing Azure App Service Web API  using Azure AD bearer token (OAuth 2.0 client credentials grant flow)
 
 ## Summary
-This article shows you how to invoke an Azure AD protected Web API from any client (native or web) using [OAuth 2.0 client credentials grant flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/v1-oauth2-client-creds-grant-flow).
+This article shows how to invoke an Azure AD protected Web API from any client (native or web) using [OAuth 2.0 client credentials grant flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/v1-oauth2-client-creds-grant-flow).
 Below are the key charateristics of the Web API. 
 
 - Web API is deployed to Azure App Service
