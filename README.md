@@ -51,7 +51,12 @@ dotnet run
 
 **4. Verify the API**  
 Open a browser and type ```https://localhost:5001/api/values```. You should see the following
+![browser output](/images/retailapibrowseroutput.PNG)
 
+alternativelt you can also use the following to verify the output from your Web API
+```curl
+curl -k -s https://localhost:5001/api/values | python -m json.tool
+```
 
 please visit [Build a web API with ASP.NET Core](https://docs.microsoft.com/en-us/learn/modules/build-web-api-net-core/) on microsoft learn for detailed instructions on building a simple ASP.NET Code web API. disclaimer: Some of the above steps are a copy-paste from the preceeding link.
 
