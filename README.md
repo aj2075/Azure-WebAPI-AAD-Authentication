@@ -71,7 +71,7 @@ please visit [Build a web API with ASP.NET Core](https://docs.microsoft.com/en-u
 
    1. Click on Deployment Center > Local Git > Continue > App Service Kudu build server >continue > finish
    
-   ![deployment center](/images/deploymentcenter.PNG=100X20)
+   ![deployment center](/images/deploymentcenter.PNG =100X20)
    
    ![deployment center](/images/deploymentcenter2.PNG)
    
