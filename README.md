@@ -67,7 +67,7 @@ please visit [Build a web API with ASP.NET Core](https://docs.microsoft.com/en-u
 
 **1. Create a Web App in Azure** following the instructions [here](https://docs.microsoft.com/en-us/learn/modules/host-a-web-app-with-azure-app-service/2-create-a-web-app-in-the-azure-portal). I named my Web App "RetailApi3".
 
-**2 Enable local git and for the Web App you created**
+**2 Enable local git and automated deployment for the Web App you created**
 
 1. Click on Deployment Center > Local Git > Continue > App Service Kudu build server >continue > finish
    
@@ -86,6 +86,17 @@ please visit [Build a web API with ASP.NET Core](https://docs.microsoft.com/en-u
 1. Note down the git clone uri
    
    ![git clone](/images/deploymenturl.PNG)
+   
+**3 Initialize local git repo on your desktop**
+
+1.change directories to the "RetailApi" folder (created in step 1: Build a simple Web API...) in your command shell and type the following command 
+```msdos
+git init
+```
+you should see an output similar to the following
+```msdos
+Initialized empty Git repository in C:/RetailApi/.git/
+```
 
 ## 3.Enable Azure AD authentication for the Web API
 
