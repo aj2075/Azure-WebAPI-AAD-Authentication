@@ -27,20 +27,31 @@ This document provides step by step instructions for doing the following
 
 # Step by step instructions
 
-## 1.Building a simple Web API with ASP.Net Core
+## 1. Building a simple Web API with ASP.Net Core
 
 First make sure you have successfully installed .Net Core and Git on your desktop. Then open a command propmt either directly or from visual studio code (Terminal > new Terminal). It's perfectly fine if you chose not to install visual studio code, just open the command prompt by typing "cmd" in the search box in the lowerleft corner. 
-
+ 
 **1. Run the following command in the command shell to create a Web API starter project**
 ```msdos
 dotnet new webapi -o RetailApi
 ```
 *The preceding command uses an ASP.NET Core project template, aliased as webapi, to scaffold a C#-based starter web API project. A directory named RetailApi is created that contains an ASP.NET Core project targeting .NET Core. The project name matches the directory name.*
 
-**2.Run the following command in command shell to change directory to the newly created RetailApi folder**
+**2. Run the following command in command shell to change directory to the newly created RetailApi folder**
 ```msdos
 cd ./RetailApi
 ```
+*Make sure the following files and directories are created Controllers/ , Program.csm RetailApi.csproj, Startup.cs*
+
+**3. Run the following command in command shell to build and test the API**
+```msdos
+dotnet run
+```
+*The preceding command will start the Web API locally The Web API will be hosted at both ```http://localhost:5000``` and ```https://localhost:5001```*
+
+**4. Verify the API**  
+Open a browser and type ```https://localhost:5001/api/values```. You should see the following
+
 
 please visit [Build a web API with ASP.NET Core](https://docs.microsoft.com/en-us/learn/modules/build-web-api-net-core/) on microsoft learn for detailed instructions on building a simple ASP.NET Code web API. disclaimer: Some of the above steps are a copy-paste from the preceeding link.
 
