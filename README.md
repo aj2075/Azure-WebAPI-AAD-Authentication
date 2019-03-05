@@ -1,4 +1,10 @@
-## Welcome to GitHub Pages
+# Welcome to GitHub Pages
+
+## Summary
+
+## Prerequisites
+1. [Install Git](https://git-scm.com/)
+
 
 You can use the [editor on GitHub](https://github.com/aj2075/Azure-WebAPI-AAD-Authentication/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
