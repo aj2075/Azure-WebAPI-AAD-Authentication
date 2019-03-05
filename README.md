@@ -20,6 +20,10 @@ This document provides step by step instructions for doing the following
 
 ## Prerequisites
 1. [Install Git](https://git-scm.com/)
+1. [Install .Net Core](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro)
+1. **Optional:** [install visual studio code](https://code.visualstudio.com/Download)
+1. **Optional:** [install python](https://www.python.org/downloads/)
+1. [Install Postman for windows](https://www.getpostman.com/downloads/)
 
 
 You can use the [editor on GitHub](https://github.com/aj2075/Azure-WebAPI-AAD-Authentication/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
