@@ -74,7 +74,7 @@ please visit [Build a web API with ASP.NET Core](https://docs.microsoft.com/en-u
   
    
    1. Create deployment credentials for your Web App. Go to your Web App > Click on Deployment Center > Click on Deployment Credentials     > User Cedentials > Enter a user name and password and click on save. 
-   ![browser output](/images/retailapibrowseroutput.PNG)
+   ![browser output](/images/deploymentcredentials.PNG)
     
     
    1. Select the build server
