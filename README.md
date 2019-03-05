@@ -84,7 +84,7 @@ please visit [Build a web API with ASP.NET Core](https://docs.microsoft.com/en-u
     
     
    1. Note down the git clone uri
-    ![git clone](/images/deploymentcredentials.PNG)
+    ![git clone](/images/deploymenturl.PNG)
 
 ## 3.Enable Azure AD authentication for the Web API
 
