@@ -63,7 +63,12 @@ curl -k -s https://localhost:5001/api/values | python -m json.tool
 please visit [Build a web API with ASP.NET Core](https://docs.microsoft.com/en-us/learn/modules/build-web-api-net-core/) on microsoft learn for detailed instructions on building a simple ASP.NET Code web API. **Disclaimer**: Some of the above steps are a copy-paste from the preceeding link.
 
 ## 2.Deploy the Web API to Azure App Service
-1. Create a Web App in Azure following the instructions [here](https://docs.microsoft.com/en-us/learn/modules/host-a-web-app-with-azure-app-service/2-create-a-web-app-in-the-azure-portal)
+
+**1. Create a Web App in Azure** following the instructions [here](https://docs.microsoft.com/en-us/learn/modules/host-a-web-app-with-azure-app-service/2-create-a-web-app-in-the-azure-portal). I named my app "RetailApi" and the app service plan "RetailApi-app-service-plan". You could choose any name you like.
+
+**2 Prepare the local git for the Web App you created
+
+   1. Create deployment credentials for your Web App. Go to 
 
 ## 3.Enable Azure AD authentication for the Web API
 
