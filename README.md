@@ -71,7 +71,7 @@ please visit [Build a web API with ASP.NET Core](https://docs.microsoft.com/en-u
 
    1. Click on Deployment Center > Local Git > Continue > App Service Kudu build server >continue > finish
    
-   ![deployment center](/images/deploymentcenter.PNG =100x)
+   ![deployment center](/images/deploymentcenter.PNG )
    
    ![deployment center](/images/deploymentcenter2.PNG)
    
@@ -84,7 +84,8 @@ please visit [Build a web API with ASP.NET Core](https://docs.microsoft.com/en-u
     
     
    1. Note down the git clone uri
-    ![git clone](/images/deploymenturl.PNG)
+   
+   ![git clone](/images/deploymenturl.PNG)
 
 ## 3.Enable Azure AD authentication for the Web API
 
