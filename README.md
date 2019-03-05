@@ -25,6 +25,12 @@ This document provides step by step instructions for doing the following
 1. **optional:** [Install visual studio code](https://code.visualstudio.com/Download)
 1. **optional:** [Install python](https://www.python.org/downloads/)
 
+# Step by step instructions
+
+# building a simple Web API with ASP.Net Core
+
+First make sure you have successfully installed .Net Core and Git on your desktop. Then open a command propmt either directly or from visual studio code (Terminal > new Terminal). It's perfectly fine if you chose not to install visual studio code, just open the command prompt by typing "cmd" in the search box in the lowerleft corner. After that simply execute the following commands in the command prompt.
+
 
 
 You can use the [editor on GitHub](https://github.com/aj2075/Azure-WebAPI-AAD-Authentication/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
