@@ -87,9 +87,9 @@ please visit [Build a web API with ASP.NET Core](https://docs.microsoft.com/en-u
    
    ![git clone](/images/deploymenturl.PNG)
    
-**3 Initialize local git repo on your desktop**
+**3 Initializ,stage and commit all your applicatin files to your local git repo on your desktop**
 
-1.change directories to the "RetailApi" folder (created in step 1: Build a simple Web API...) in your command shell and type the following command 
+1.Change directories to the "RetailApi" folder (created in step 1: Build a simple Web API...) in your command shell and type the following command 
 ```msdos
 git init
 ```
@@ -97,7 +97,15 @@ you should see an output similar to the following
 ```msdos
 Initialized empty Git repository in C:/RetailApi/.git/
 ```
-
+1. Stage application files: Type the followng command in your command shell
+```
+git add . 
+```
+The command above adds all files, represented by the ".", to the staging state of Git.
+1.Commit your code to local git
+```
+ git commit -m "Initial Commit" 
+```
 ## 3.Enable Azure AD authentication for the Web API
 
 ## 4.Invoke the API from Postman using the bearer token obtained from Azure AD
