@@ -22,8 +22,8 @@ This document provides step by step instructions for doing the following
 1. [Install Git](https://git-scm.com/)
 1. [Install .Net Core](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro)
 1. [Install Postman for windows](https://www.getpostman.com/downloads/)
-1. **Optional:** [install visual studio code](https://code.visualstudio.com/Download)
-1. **Optional:** [install python](https://www.python.org/downloads/)
+1. **optional:** [Install visual studio code](https://code.visualstudio.com/Download)
+1. **optional:** [Install python](https://www.python.org/downloads/)
 
 
 
