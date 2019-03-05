@@ -27,7 +27,7 @@ This document provides step by step instructions for doing the following
 
 # Step by step instructions
 
-## 1. Building a simple Web API with ASP.Net Core
+## 1. Build a simple Web API with ASP.Net Core
 
 First make sure you have successfully installed .Net Core and Git on your desktop. Then open a command propmt either directly or from visual studio code (Terminal > new Terminal). It's perfectly fine if you chose not to install visual studio code, just open the command prompt by typing "cmd" in the search box in the lowerleft corner. 
  
