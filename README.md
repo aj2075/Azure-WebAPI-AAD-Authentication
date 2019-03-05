@@ -71,12 +71,16 @@ please visit [Build a web API with ASP.NET Core](https://docs.microsoft.com/en-u
 
    1. Click on Deployment Center > Local Git > Continue > App Service Kudu build server >continue > finish
    
-    
+   ![deployment center](/images/deploymentcenter.PNG)
+   
+   ![deployment center](/images/deploymentcenter2.PNG)
+   
+   ![deployment center](/images/deploymentcenter3.PNG)
   
    
    1. Create deployment credentials for your Web App. Go to your Web App > Click on Deployment Center > Click on Deployment Credentials     > User Cedentials > Enter a user name and password and click on save. 
    
-    ![deployment credentials](/images/deploymentcredentials.PNG)
+   ![deployment credentials](/images/deploymentcredentials.PNG)
     
     
    1. Select the build server
