@@ -18,7 +18,6 @@ This document provides step by step instructions for doing the following
 - enable Azure AD authentication for the Web API
 - successfully invoke the API from Postman using the bearer token obtained from Azure AD.
 
-
 ## Prerequisites
 1. [Install Git](https://git-scm.com/)
 1. [Install .Net Core](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro)
@@ -32,7 +31,7 @@ This document provides step by step instructions for doing the following
 
 First make sure you have successfully installed .Net Core and Git on your desktop. Then open a command propmt either directly or from visual studio code (Terminal > new Terminal). It's perfectly fine if you chose not to install visual studio code, just open the command prompt by typing "cmd" in the search box in the lowerleft corner. 
  
-**a. Run the following command in the command shell to create a Web API starter project**
+   **1. Run the following command in the command shell to create a Web API starter project**
 ```msdos
 dotnet new webapi -o RetailApi
 ```
