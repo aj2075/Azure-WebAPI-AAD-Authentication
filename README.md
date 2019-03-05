@@ -37,7 +37,7 @@ dotnet new webapi -o RetailApi
 ```
 *The preceding command uses an ASP.NET Core project template, aliased as webapi, to scaffold a C#-based starter web API project. A directory named RetailApi is created that contains an ASP.NET Core project targeting .NET Core. The project name matches the directory name.*
 
-**1. Change directory to the newly created RetailApi folder
+**2. Change directory to the newly created RetailApi folder**
 ```msdos
 cd ./RetailApi
 ```
