@@ -51,6 +51,7 @@ dotnet run
 
 **4. Verify the API**  
 Open a browser and type ```https://localhost:5001/api/values```. You should see the following
+
 ![browser output](/images/retailapibrowseroutput.PNG)
 
 alternativelt you can also use the following to verify the output from your Web API
