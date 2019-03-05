@@ -54,7 +54,7 @@ Open a browser and type ```https://localhost:5001/api/values```. You should see 
 
 ![browser output](/images/retailapibrowseroutput.PNG)
 
-alternatively, you can also use the following to verify the output from your Web API
+alternatively,  you can also use the following to verify the output from your Web API
 ```curl
 curl -k -s https://localhost:5001/api/values | python -m json.tool
 ```
