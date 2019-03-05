@@ -67,11 +67,11 @@ please visit [Build a web API with ASP.NET Core](https://docs.microsoft.com/en-u
 
 **1. Create a Web App in Azure** following the instructions [here](https://docs.microsoft.com/en-us/learn/modules/host-a-web-app-with-azure-app-service/2-create-a-web-app-in-the-azure-portal). I named my app "RetailApi" and the app service plan "RetailApi-app-service-plan". You could choose any name you like.
 
-**2 Prepare the local git for the Web App you created**
+**2 Enable local git and for the Web App you created**
 
    1. Click on Deployment Center > Local Git > Continue > App Service Kudu build server >continue > finish
    
-   ![deployment center](/images/deploymentcenter.PNG)
+   ![deployment center](/images/deploymentcenter.PNG =200X20)
    
    ![deployment center](/images/deploymentcenter2.PNG)
    
