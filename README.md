@@ -64,11 +64,11 @@ please visit [Build a web API with ASP.NET Core](https://docs.microsoft.com/en-u
     ![browser output](/images/deploymentcredentials.PNG)
 ## 2.Deploy the Web API to Azure App Service
 
-**a. Create a Web App in Azure** following the instructions [here](https://docs.microsoft.com/en-us/learn/modules/host-a-web-app-with-azure-app-service/2-create-a-web-app-in-the-azure-portal). I named my Web App "RetailApi3".
+**2.1. Create a Web App in Azure** following the instructions [here](https://docs.microsoft.com/en-us/learn/modules/host-a-web-app-with-azure-app-service/2-create-a-web-app-in-the-azure-portal). I named my Web App "RetailApi3".
 
-**b. Enable local git and automated deployment for the Web App you created**
+**2.2. Enable local git and automated deployment for the Web App you created**
 
-1. Click on Deployment Center > Local Git > Continue > App Service Kudu build server >continue > finish
+2.2.1. Click on Deployment Center > Local Git > Continue > App Service Kudu build server >continue > finish
    
    ![deployment center](/images/deploymentcenter.PNG )
    
@@ -77,7 +77,7 @@ please visit [Build a web API with ASP.NET Core](https://docs.microsoft.com/en-u
    ![deployment center](/images/deploymentcenter3.PNG)
   
    
-1. Create deployment credentials for your Web App. Go to your Web App > Click on Deployment Center > Click on Deployment Credentials     > User Cedentials > Enter a user name and password and click on save. 
+2.2.2. Create deployment credentials for your Web App. Go to your Web App > Click on Deployment Center > Click on Deployment Credentials     > User Cedentials > Enter a user name and password and click on save. 
    
    ![deployment credentials](/images/deploymentcredentials.PNG)
     
