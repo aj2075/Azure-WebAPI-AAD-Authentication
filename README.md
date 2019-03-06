@@ -37,19 +37,19 @@ dotnet new webapi -o RetailApi
 ```
 *The preceding command uses an ASP.NET Core project template, aliased as webapi, to scaffold a C#-based starter web API project. A directory named RetailApi is created that contains an ASP.NET Core project targeting .NET Core. The project name matches the directory name.*
 
-**1.2. Run the following command in command shell to change directory to the newly created RetailApi folder**
+### 1.2. Run the following command in command shell to change directory to the newly created RetailApi folder
 ```msdos
 cd ./RetailApi
 ```
 *Make sure the following files and directories are created Controllers/ , Program.csm RetailApi.csproj, Startup.cs*
 
-**1.3. Run the following command in command shell to build and test the API**
+### 1.3. Run the following command in command shell to build and test the API
 ```msdos
 dotnet run
 ```
 *The preceding command will start the Web API locally The Web API will be hosted at both ```http://localhost:5000``` and ```https://localhost:5001```*
 
-**1.4. Verify the API**  
+### 1.4. Verify the API**  
 Open a browser and type ```https://localhost:5001/api/values```. You should see the following
 
 ![browser output](/images/retailapibrowseroutput.PNG)
@@ -64,11 +64,12 @@ please visit [Build a web API with ASP.NET Core](https://docs.microsoft.com/en-u
     ![browser output](/images/deploymentcredentials.PNG)
 ## 2.Deploy the Web API to Azure App Service
 
-**2.1. Create a Web App in Azure** following the instructions [here](https://docs.microsoft.com/en-us/learn/modules/host-a-web-app-with-azure-app-service/2-create-a-web-app-in-the-azure-portal). I named my Web App "RetailApi3".
+### 2.1. Create a Web App in Azure
+Follow the instructions [here](https://docs.microsoft.com/en-us/learn/modules/host-a-web-app-with-azure-app-service/2-create-a-web-app-in-the-azure-portal) to create the Web App. I named my Web App "RetailApi3".
 
-**2.2. Enable local git and automated deployment for the Web App you created**
+### 2.2. Enable local git and automated deployment for the Web App you created**
 
-2.2.1. Click on Deployment Center > Local Git > Continue > App Service Kudu build server >continue > finish
+#### 2.2.1. Click on Deployment Center > Local Git > Continue > App Service Kudu build server >continue > finish
    
    ![deployment center](/images/deploymentcenter.PNG )
    
@@ -77,18 +78,18 @@ please visit [Build a web API with ASP.NET Core](https://docs.microsoft.com/en-u
    ![deployment center](/images/deploymentcenter3.PNG)
   
    
-2.2.2. Create deployment credentials for your Web App. Go to your Web App > Click on Deployment Center > Click on Deployment Credentials     > User Cedentials > Enter a user name and password and click on save. 
+#### 2.2.2. Create deployment credentials for your Web App. Go to your Web App > Click on Deployment Center > Click on Deployment Credentials     > User Cedentials > Enter a user name and password and click on save. 
    
    ![deployment credentials](/images/deploymentcredentials.PNG)
     
     
-1. Note down the git clone uri
+#### 2.2.3 Note down the git clone uri
    
    ![git clone](/images/deploymenturl.PNG)
    
-**c. Initializ,stage and commit all your applicatin files to your local git repo on your desktop**
+### 2.3. Initializ,stage and commit all your applicatin files to your local git repo on your desktop
 
-1. Change directories to the "RetailApi" folder (created in step 1: Build a simple Web API...) in your command shell and type the following command 
+#### 2.3.1 Change directories to the "RetailApi" folder (created in step 1: Build a simple Web API...) in your command shell and type the following command 
 
    ```msdos
    git init
@@ -98,21 +99,21 @@ please visit [Build a web API with ASP.NET Core](https://docs.microsoft.com/en-u
    Initialized empty Git repository in C:/RetailApi/.git/
    ```
    
-1. Stage application files: Type the followng command in your command shell
+#### 2.3.2 Stage application files: Type the followng command in your command shell
 
    ```
    git add . 
    ```
    The command above adds all files, represented by the ".", to the staging state of Git.
 
-1. Commit your code to local git
+#### 2.3.3 Commit your code to local git
 
    ```
     git commit -m "Initial Commit" 
    ```
-**d. Add Remote for the local Git Repo  to connect the local git to Azure git , using the git clone uri from step b**
+### 2.4 Add Remote for the local Git Repo  to connect the local git to Azure git , using the git clone uri from step b
 
-**e. Push local code to Azure**
+**e. Push local code to Azure**\\
 
 **f. Verify code is uploaded to Azure**
 
