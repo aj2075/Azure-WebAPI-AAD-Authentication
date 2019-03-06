@@ -44,6 +44,7 @@ cd ./RetailApi
 *Make sure the following files and directories are created Controllers/ , Program.csm RetailApi.csproj, Startup.cs*
 
 ### 1.3. Run the following command in command shell to build and test the API
+
 ```msdos
 dotnet run
 ```
@@ -55,6 +56,7 @@ Open a browser and type ```https://localhost:5001/api/values```. You should see 
 ![browser output](/images/retailapibrowseroutput.PNG)
 
 alternatively,  you can also use the following to verify the output from your Web API
+
 ```curl
 curl -k -s https://localhost:5001/api/values | python -m json.tool
 ```
