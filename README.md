@@ -113,11 +113,11 @@ Follow the instructions [here](https://docs.microsoft.com/en-us/learn/modules/ho
    ```
 ### 2.4 Add Remote for the local Git Repo  to connect the local git to Azure git , using the git clone uri from step b
 
-**e. Push local code to Azure**\\
+### 2.5 Push local code to Azure
 
-**f. Verify code is uploaded to Azure**
+### 2.6 Verify code is uploaded to Azure**
 
-**g. Verify API in Azure**
+### 2.7 Verify API in Azure**
 
 ## 3.Enable Azure AD authentication for the Web API
 
