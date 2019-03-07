@@ -184,11 +184,35 @@ This will create a new AD App for your Web API and turn on Authentication for yo
 
 When you access your Web API from the browser, Azure AD automatically directs you to the log-in page where the user can enter their credentials. However in order to access the Web API from an external client application, you will need to perform some addtional steps to access the API. This section walks you through those steps and will show you how to make an API call successfully from Postman.
 
-### 4.1 Aquire the bearer token from Azure AD.
+### 4.1 Get the Azure AD Application Id for your Web API
 
-#### 4.1.1.1 Get the Azure AD Application Id for your Web API: Navigate to your Web API > click on Authentication / Authorization > Click on Authenticaon Providers / Azure Active Directory >Click on Manage Application >  note down the Application ID
+Navigate to your Web API > click on Authentication / Authorization > Click on Authenticaon Providers / Azure Active Directory >Click on Manage Application >  note down the Application ID
 
 ![web api app id](/images/ad-appid.PNG)
 
+### 4.2 Create an Azure AD Application for the Web API client
+
+#### 4.2.1 create client app
+Navigate to your Azure portal > click on All Services(in the left pane) > click on Identity > click on Azure Active Directory > click on App registrations > Click on New application registration > enter Application name , leave the application type as "Web App / API" , enter the sign-on url as http://localhost (thid doesnt have to be real) > click on create
+
+![web api app id](/images/ad-appid.PNG)
+
+
+![client app](/images/client-app.PNG)
+
+
+#### 4.2.2 Get  Azure AD application ID for the client Application
+
+Navigate to your Azure AD in the portal > click on App registrations > click on the Azure AD client application you just created and note down the application id.
+
+![client app id](/images/client-appid.PNG)
+
+
+#### 4.2.3 Get client secret for the client Application
+
+Navigate to your client App in Azure AD > click on settings > click on Keys > Enter a key name and pick a duration > click on save. This will generate a new secret. You will have to note down the secret before you navigate away from this page. This key will be displayed only once.
+![client secret step1](/images/client-secret.PNG)
+
+![client secret step2](/images/client-secret-generated.PNG)
 
 
