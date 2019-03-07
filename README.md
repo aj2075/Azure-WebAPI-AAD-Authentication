@@ -172,7 +172,12 @@ In this step you will enable Azure AD authentication for your Web API. Once auth
 #### 3.1.3 Select "Login with Azure Active Directory" in the "Action to take when request is not authenticated" drop down and click on "Azure Active Directory" under "Authentication Providers"
 ![auth authorization](/images/auth3.PNG)
 
-#### 3.1.2 
+#### 3.1.2 Click on "Express" > click on "Creat New AD App" and click "OK"
+![auth authorization](/images/auth4.PNG)
+
+This will create a new AD App for your Web API and turn on Authentication for your Web API. Now go back to the browser and try to access the url for the Web APP. You will be prompted to enter the crendentials for the Web API.
+
+![auth authorization](/images/auth5.PNG)
 
 
 ## 4.Invoke the API from Postman using the bearer token obtained from Azure AD
