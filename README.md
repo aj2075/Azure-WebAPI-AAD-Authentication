@@ -188,7 +188,7 @@ When you access your Web API from the browser, Azure AD automatically directs yo
 
 #### 4.1.1.1 Get the Azure AD Application Id for your Web API: Navigate to your Web API > click on Authentication / Authorization > Click on Authenticaon Providers / Azure Active Directory >Click on Manage Application >  note down the Application ID
 
-[! web api app id](/images/ad-appid.PNG)
+![web api app id](/images/ad-appid.PNG)
 
 
 
