@@ -210,8 +210,11 @@ Navigate to your Azure AD in the portal > click on App registrations > click on 
 
 #### 4.2.3 Get client secret for the client Application
 
-Navigate to your client App in Azure AD > click on settings > click on Keys > Enter a key name and pick a duration > click on save. This will generate a new secret. You will have to note down the secret before you navigate away from this page. This key will be displayed only once.
+Navigate to your client App in Azure AD > click on settings > click on Keys > Enter a key name and pick a duration > click on save. 
+
 ![client secret step1](/images/client-secret.PNG)
+
+This will generate a new secret. You will have to note down the secret before you navigate away from this page. This key will be displayed only once.
 
 ![client secret step2](/images/client-secret-generated.PNG)
 
