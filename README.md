@@ -74,11 +74,11 @@ Follow the instructions [here](https://docs.microsoft.com/en-us/learn/modules/ho
 
 #### 2.2.1. Click on Deployment Center > Local Git > Continue > App Service Kudu build server >continue > finish
    
-   ![deployment center1](/images/deploymentcenter.PNG )
+![deployment center1](/images/deploymentcenter.PNG )
    
-   ![deployment center2](/images/deploymentcenter2.PNG)
+![deployment center2](/images/deploymentcenter2.PNG)
    
-   ![deployment center3](/images/deploymentcenter3.PNG)
+![deployment center3](/images/deploymentcenter3.PNG)
   
    
 #### 2.2.2. Create deployment credentials for your Web App. Go to your Web App > Click on Deployment Center > Click on Deployment Credentials     > User Cedentials > Enter a user name and password and click on save. 
