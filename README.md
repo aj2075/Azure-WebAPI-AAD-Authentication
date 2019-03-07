@@ -151,7 +151,7 @@ Go to Azure portal > navigate to your Web App > click on Deployment Center. You 
 Naviagte to your Web App in Azure portal > click on overview > note down the url of your Web App
 ![web app url](/images/webapp-url.PNG)
 
-Open a browser and type <your-web-app-url>/api/values, for example ```https://retailapixxx.azurewebsites.net/api/values```
+Open a browser and type [your-web-app-url]/api/values, for example ```https://retailapixxx.azurewebsites.net/api/values```
 
 ![azure api](/images/azure-browser-output.PNG)
 
