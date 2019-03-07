@@ -74,7 +74,7 @@ Follow the instructions [here](https://docs.microsoft.com/en-us/learn/modules/ho
 
 #### 2.2.1. Click on Deployment Center > Local Git > Continue > App Service Kudu build server >continue > finish
 
-![deployment center2](/images/deploymentcenter2.PNG)
+![deployment center2](/images/deploymentcenter.PNG)
    
 ![deployment center2](/images/deploymentcenter2.PNG)
    
