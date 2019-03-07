@@ -221,7 +221,7 @@ This will generate a new secret. You will have to note down the secret before yo
 
 Navigate to Azure AD in your Azure Portal > Click on App Registrations > click on Endpoints. Copy the Token URL.
 
-![token url](/images/token-endpoint.pNG)
+![token url](/images/token-endpoint.PNG)
 
 #### 4.2.5 Get the bearer token
 
