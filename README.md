@@ -143,10 +143,14 @@ You will be prompted for a username and password. Enter the username and passwor
 
 Go to Azure portal > navigate to your Web App > click on Deployment Center. You will see the first commit that you have on your local machine is now uploaded to Azure.
 
-![deployment center]
+![deployment center](/images/deploymentcenter-code.PNG)
 
 
-### 2.7 Verify API in Azure**
+### 2.7 Verify API in Azure
+
+Naviagte to your Web App in Azure portal > click on overview > note down the url of your Web App
+
+Open a browser and type <your-web-app-url>/
 
 ## 3.Enable Azure AD authentication for the Web API
 
