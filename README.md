@@ -62,8 +62,6 @@ curl -k -s https://localhost:5001/api/values | python -m json.tool
 ```
 
 please visit [Build a web API with ASP.NET Core](https://docs.microsoft.com/en-us/learn/modules/build-web-api-net-core/) on microsoft learn for detailed instructions on building a simple ASP.NET Code web API. **Disclaimer**: Some of the above steps are a copy-paste from the preceeding link.
-
-![browser output](/images/deploymentcredentials.PNG)
     
 ## 2.Deploy the Web API to Azure App Service
 
