@@ -161,9 +161,19 @@ Congragulations !! You have successfully deployed your Web API to Azure Web Apps
 
 In this step you will enable Azure AD authentication for your Web API. Once authentication is enabled, youe Web API can not be accessed without user credentials.
 
-### Navigate to your Web App in Azure Portal and click on "Authentication / Authorization" in the left navigation pane
+### 3.1 Navigate to your Web App in Azure Portal and perform the following
 
+#### 3.1.1 Click on "Authentication / Authorization" in the left navigation pane
 ![auth authorization](/images/auth-authorization.PNG)
+
+#### 3.1.2 Click on the "On" button under App Service Authentication
+![auth authorization](/images/auth2.PNG)
+
+#### 3.1.3 Select "Login with Azure Active Directory" in the "Action to take when request is not authenticated" drop down and click on "Azure Active Directory" under "Authentication Providers"
+![auth authorization](/images/auth3.PNG)
+
+#### 3.1.2 
+
 
 ## 4.Invoke the API from Postman using the bearer token obtained from Azure AD
 
