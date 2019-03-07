@@ -225,6 +225,8 @@ Navigate to Azure AD in your Azure Portal > Click on App Registrations > click o
 
 #### 4.2.5 Get the bearer token
 
+Open Postman for windows
+
 ###  4.2.6 Make an API call to your Web API
 
 
