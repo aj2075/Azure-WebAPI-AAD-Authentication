@@ -72,7 +72,7 @@ Follow the instructions [here](https://docs.microsoft.com/en-us/learn/modules/ho
 
 ### 2.2. Enable local git and automated deployment for the Web App you created
 
-#### 2.2.1. Click on Deployment Center > Local Git > Continue > App Service Kudu build server >continue > finish
+
    
 ![deployment center1](/images/deploymentcenter.PNG )
    
