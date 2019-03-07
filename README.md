@@ -70,15 +70,15 @@ please visit [Build a web API with ASP.NET Core](https://docs.microsoft.com/en-u
 ### 2.1. Create a Web App in Azure
 Follow the instructions [here](https://docs.microsoft.com/en-us/learn/modules/host-a-web-app-with-azure-app-service/2-create-a-web-app-in-the-azure-portal) to create a Web App with any name for example , "WebApp3".
 
-### 2.2. Enable local git and automated deployment for the Web App you created**
+### 2.2. Enable local git and automated deployment for the Web App you created
 
 #### 2.2.1. Click on Deployment Center > Local Git > Continue > App Service Kudu build server >continue > finish
    
-   ![deployment center](/images/deploymentcenter.PNG )
+   ![deployment center1](/images/deploymentcenter.PNG )
    
-   ![deployment center](/images/deploymentcenter2.PNG)
+   ![deployment center2](/images/deploymentcenter2.PNG)
    
-   ![deployment center](/images/deploymentcenter3.PNG)
+   ![deployment center3](/images/deploymentcenter3.PNG)
   
    
 #### 2.2.2. Create deployment credentials for your Web App. Go to your Web App > Click on Deployment Center > Click on Deployment Credentials     > User Cedentials > Enter a user name and password and click on save. 
