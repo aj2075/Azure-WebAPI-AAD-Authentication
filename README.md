@@ -67,7 +67,7 @@ please visit [Build a web API with ASP.NET Core](https://docs.microsoft.com/en-u
 ## 2.Deploy the Web API to Azure App Service
 
 ### 2.1. Create a Web App in Azure
-Follow the instructions [here](https://docs.microsoft.com/en-us/learn/modules/host-a-web-app-with-azure-app-service/2-create-a-web-app-in-the-azure-portal) to create the Web App. For the purpose of this tutorial, the web app is names as "WebApi3"
+Follow the instructions [here](https://docs.microsoft.com/en-us/learn/modules/host-a-web-app-with-azure-app-service/2-create-a-web-app-in-the-azure-portal) to create a Web App with any name for example , "WebApp3".
 
 ### 2.2. Enable local git and automated deployment for the Web App you created**
 
@@ -149,8 +149,13 @@ Go to Azure portal > navigate to your Web App > click on Deployment Center. You 
 ### 2.7 Verify API in Azure
 
 Naviagte to your Web App in Azure portal > click on overview > note down the url of your Web App
+![web app url](/images/webapp-url.PNG)
 
-Open a browser and type <your-web-app-url>/
+Open a browser and type <your-web-app-url>/api/values, for example ```https://retailapixxx.azurewebsites.net/api/values```
+
+![azure api](/images/azure-browser-output.PNG)
+
+Congragulations !! You have successfully deployed your Web API to Azure Web Apps.
 
 ## 3.Enable Azure AD authentication for the Web API
 
