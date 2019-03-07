@@ -172,7 +172,7 @@ In this step you will enable Azure AD authentication for your Web API. Once auth
 ![auth authorization](/images/auth3.PNG)
 
 #### 3.1.2 Click on "Express" > click on "Creat New AD App" and click "OK"
-![auth authorization](/images/auth4.PNG)
+![auth authorization](/images/auth4-2.PNG)
 
 This will create a new AD App for your Web API and turn on Authentication for your Web API. Now go back to the browser and try to access the url for the Web APP. You will be prompted to enter the crendentials for the Web API.
 
