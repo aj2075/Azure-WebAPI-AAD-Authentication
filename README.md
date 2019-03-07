@@ -121,17 +121,30 @@ Follow the instructions [here](https://docs.microsoft.com/en-us/learn/modules/ho
    git remote add origin  https://retailapixxx.scm.azurewebsites.net:443/retailapixxx.git
    ```
 #### 2.4.2 Verify Remote Git is added successfully
+   
    ```
-		 git remote -v
+   git remote -v
    ```
    you should see output similar to the following
    ```
-		 origin  https://retailapixxx.scm.azurewebsites.net:443/retailapixxx.git (fetch)
+   origin  https://retailapixxx.scm.azurewebsites.net:443/retailapixxx.git (fetch)
    origin  https://retailapixxx.scm.azurewebsites.net:443/retailapixxx.git (push)
    ```
 ### 2.5 Push local code to Azure
 
-### 2.6 Verify code is uploaded to Azure**
+Execute the following command from your command shell
+
+```
+ git push origin master
+```
+You will be prompted for a username and password. Enter the username and password you created in step 2.2.2 : create deployment credentials for your Web App
+
+### 2.6 Verify code is uploaded to Azure
+
+Go to Azure portal > navigate to your Web App > click on Deployment Center. You will see the first commit that you have on your local machine is now uploaded to Azure.
+
+![deployment center]
+
 
 ### 2.7 Verify API in Azure**
 
