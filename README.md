@@ -225,9 +225,32 @@ Navigate to Azure AD in your Azure Portal > Click on App Registrations > click o
 
 #### 4.2.5 Get the bearer token
 
-Open Postman for windows
+Open Postman for windows > click on New Request > enter the required values (create collection if needed) > click save.
+
+![new postman request](/images/new-postman-req.PNG)
+
+Click the dropdown and select "POST". enter the token url copied in step 4.2.4 in the URL field. 
+Click on Body and select the x-www-form-urlencoded radio button. Enter the following key value pairs in the form fields as shown in the screenshot below
+key: grant_type , value: "client_credentials"
+key: client_id, value: Azure AD Applciation id of the client application from step 4.2.2
+key: resource, value : Azure AD Application id of the Web API from step 4.1
+key: client_secret, value: client secret of the client application from step 4.2.3
+
+Click on Send. You should get the Bearer token in the response as shown below
+![bearer token](/images/postman-gettoken.png)
+
+Copy the bearer token returned in the response
+
+![bearer token 2](/images/bearer-token-2.PNG)
 
 ###  4.2.6 Make an API call to your Web API
+Open a new Request in Postman > Now select "Get" from the drop down > Enter the Web API URL (eg.https://retailapixxx.azurewebsites.net/api/values) in the url field
+
+Click on "Authorization" and select "Bearer Token" from the "TYPE" dropdown. Enter the bearer token copied in the previous step.
+![web api request 1](/images/postman-webapi-1.PNG)
+
+Click on Send. You should see the response from the Web API.
+![web api request 2](/images/postman-webapi-2.PNG)
 
 
 Congragulations !! you have successfully made an API call using a bearer token to an Azure AD protected Web API. 
