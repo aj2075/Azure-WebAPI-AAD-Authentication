@@ -218,4 +218,13 @@ This will generate a new secret. You will have to note down the secret before yo
 
 ![client secret step2](/images/client-secret-generated.PNG)
 
+#### 4.2.4 Get the Azure AD token URL
+
+#### 4.2.5 Get the bearer token
+
+###  4.2.6 Make an API call to your Web API
+
+
+Congragulations !! you have successfully made an API call using a bearer token to an Azure AD protected Web API. 
+
 
