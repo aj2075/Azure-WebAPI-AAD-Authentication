@@ -67,7 +67,7 @@ please visit [Build a web API with ASP.NET Core](https://docs.microsoft.com/en-u
 ## 2.Deploy the Web API to Azure App Service
 
 ### 2.1. Create a Web App in Azure
-Follow the instructions [here](https://docs.microsoft.com/en-us/learn/modules/host-a-web-app-with-azure-app-service/2-create-a-web-app-in-the-azure-portal) to create the Web App. I named my Web App "RetailApi3".
+Follow the instructions [here](https://docs.microsoft.com/en-us/learn/modules/host-a-web-app-with-azure-app-service/2-create-a-web-app-in-the-azure-portal) to create the Web App. For the purpose of this tutorial, the web app is names as "WebApi3"
 
 ### 2.2. Enable local git and automated deployment for the Web App you created**
 
@@ -111,10 +111,24 @@ Follow the instructions [here](https://docs.microsoft.com/en-us/learn/modules/ho
 #### 2.3.3 Commit your code to local git
 
    ```
-    git commit -m "Initial Commit" 
+   git commit -m "Initial Commit" 
    ```
-### 2.4 Add Remote for the local Git Repo  to connect the local git to Azure git , using the git clone uri from step b
+### 2.4 Add Remote for the local Git Repo  to connect the local git to Azure git
 
+#### 2.4.1 Copy the git clone uri from step 2.2.3 and execute the following command in your command shell
+  
+   ```msdos
+   git remote add origin  https://retailapixxx.scm.azurewebsites.net:443/retailapixxx.git
+   ```
+#### 2.4.2 Verify Remote Git is added successfully
+   ```
+		 git remote -v
+   ```
+   you should see output similar to the following
+   ```
+		 origin  https://retailapixxx.scm.azurewebsites.net:443/retailapixxx.git (fetch)
+   origin  https://retailapixxx.scm.azurewebsites.net:443/retailapixxx.git (push)
+   ```
 ### 2.5 Push local code to Azure
 
 ### 2.6 Verify code is uploaded to Azure**
