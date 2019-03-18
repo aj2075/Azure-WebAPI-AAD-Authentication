@@ -186,7 +186,7 @@ Click on "Express" > click on "Creat New AD App" and click "OK"
 
 This will create a new AD App for your Web API and turn on Authentication for your Web API. 
 
-### 3.1 Verify AD Authentication is activated.
+### 3.2 Verify AD Authentication is activated.
 
 Go back to the browser and try to access the url for the Web APP. You will be prompted to enter the crendentials for the Web API.
 
