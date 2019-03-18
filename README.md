@@ -31,27 +31,29 @@ This document provides step by step instructions for doing the following
 
 First make sure you have successfully installed .Net Core and Git on your desktop. Then open a command propmt either directly or from visual studio code (Terminal > new Terminal). It's perfectly fine if you chose not to install visual studio code, just open the command prompt by typing "cmd" in the search box in the lowerleft corner. 
  
-### 1.1. Run the following command in the command shell to create a Web API starter project
+### 1.1 Create Web API
+Run the following command in the command shell to create a Web API starter project
 ```msdos
 dotnet new webapi -o RetailApi
 ```
 *The preceding command uses an ASP.NET Core project template, aliased as webapi, to scaffold a C#-based starter web API project. A directory named RetailApi is created that contains an ASP.NET Core project targeting .NET Core. The project name matches the directory name.*
 
-### 1.2. Run the following command in command shell to change directory to the newly created RetailApi folder
+### 1.2 Build and test the Web API
+
+Run the following command in command shell to change directory to the newly created RetailApi folder
 ```msdos
 cd ./RetailApi
 ```
 *Make sure the following files and directories are created Controllers/ , Program.csm RetailApi.csproj, Startup.cs*
 
-### 1.3. Run the following command in command shell to build and test the API
+Run the following command in command shell to build and test the API
 
 ```msdos
 dotnet run
 ```
 *The preceding command will start the Web API locally The Web API will be hosted at both ```http://localhost:5000``` and ```https://localhost:5001```*
 
-### 1.4. Verify the API  
-Open a browser and type ```https://localhost:5001/api/values```. You should see the following
+**Verify the API:** open a browser and type ```https://localhost:5001/api/values```. You should see the following
 
 ![browser output](/images/retailapibrowseroutput.PNG)
 
@@ -65,12 +67,12 @@ please visit [Build a web API with ASP.NET Core](https://docs.microsoft.com/en-u
     
 ## 2.Deploy the Web API to Azure App Service
 
-### 2.1. Create a Web App in Azure
+### 2.1 Create a Web App in Azure
 Follow the instructions [here](https://docs.microsoft.com/en-us/learn/modules/host-a-web-app-with-azure-app-service/2-create-a-web-app-in-the-azure-portal) to create a Web App with any name for example , "WebApp3".
 
 ### 2.2. Enable local git and automated deployment for the Web App you created
 
-#### 2.2.1. Click on Deployment Center > Local Git > Continue > App Service Kudu build server >continue > finish
+Click on Deployment Center > Local Git > Continue > App Service Kudu build server >continue > finish
 
 ![deployment center2](/images/deploymentcenter.PNG)
    
@@ -79,18 +81,20 @@ Follow the instructions [here](https://docs.microsoft.com/en-us/learn/modules/ho
 ![deployment center3](/images/deploymentcenter3.PNG)
   
    
-#### 2.2.2. Create deployment credentials for your Web App. Go to your Web App > Click on Deployment Center > Click on Deployment Credentials     > User Cedentials > Enter a user name and password and click on save. 
+### 2.3 Create deployment credentials for your Web App. 
+
+Go to your Web App > Click on Deployment Center > Click on Deployment Credentials > User Cedentials > Enter a user name and password and click on save. Note down the username and password for future use.
    
    ![deployment credentials](/images/deploymentcredentials.PNG)
     
     
-#### 2.2.3 Note down the git clone uri
+**Note down the git clone uri.**
    
    ![git clone](/images/deploymenturl.PNG)
    
-### 2.3. Initializ,stage and commit all your applicatin files to your local git repo on your desktop
+### 2.4 Initializ,stage and commit all your applicatin files to your local git repo on your desktop
 
-#### 2.3.1 Change directories to the "RetailApi" folder (created in step 1: Build a simple Web API...) in your command shell and type the following command 
+**Initialize:** change directories to the "RetailApi" folder (created in step 1: Build a simple Web API...) in your command shell and type the following command 
 
    ```msdos
    git init
@@ -100,26 +104,26 @@ Follow the instructions [here](https://docs.microsoft.com/en-us/learn/modules/ho
    Initialized empty Git repository in C:/RetailApi/.git/
    ```
    
-#### 2.3.2 Stage application files: Type the followng command in your command shell
+**Stage application files:** type the followng command in your command shell
 
    ```
    git add . 
    ```
    The command above adds all files, represented by the ".", to the staging state of Git.
 
-#### 2.3.3 Commit your code to local git
+**Commit** your code to local git
 
    ```
    git commit -m "Initial Commit" 
    ```
-### 2.4 Add Remote for the local Git Repo  to connect the local git to Azure git
+### 2.5 Add remote for the local git repo to connect the local git to Azure git
 
-#### 2.4.1 Copy the git clone uri from step 2.2.3 and execute the following command in your command shell
+Copy the git clone uri from step 2.3 and execute the following command in your command shell
   
    ```msdos
    git remote add origin  https://retailapixxx.scm.azurewebsites.net:443/retailapixxx.git
    ```
-#### 2.4.2 Verify Remote Git is added successfully
+Verify Remote Git is added successfully
    
    ```
    git remote -v
@@ -129,16 +133,16 @@ Follow the instructions [here](https://docs.microsoft.com/en-us/learn/modules/ho
    origin  https://retailapixxx.scm.azurewebsites.net:443/retailapixxx.git (fetch)
    origin  https://retailapixxx.scm.azurewebsites.net:443/retailapixxx.git (push)
    ```
-### 2.5 Push local code to Azure
+### 2.6 Push local code to Azure
 
 Execute the following command from your command shell
 
 ```
  git push origin master
 ```
-You will be prompted for a username and password. Enter the username and password you created in step 2.2.2 : create deployment credentials for your Web App
+You will be prompted for a username and password. Enter the username and password you created in step 2.3: create deployment credentials for your Web App
 
-### 2.6 Verify code is uploaded to Azure
+Verify code is uploaded to Azure
 
 Go to Azure portal > navigate to your Web App > click on Deployment Center. You will see the first commit that you have on your local machine is now uploaded to Azure.
 
@@ -160,21 +164,31 @@ Congragulations !! You have successfully deployed your Web API to Azure Web Apps
 
 In this step you will enable Azure AD authentication for your Web API. Once authentication is enabled, your Web API can not be accessed without user credentials.
 
-### 3.1 Navigate to your Web App in Azure Portal and perform the following
+### 3.1 Enable Authentication
 
-#### 3.1.1 Click on "Authentication / Authorization" in the left navigation pane
+Navigate to your Web App in Azure Portal and perform the following steps:
+
+Click on "Authentication / Authorization" in the left navigation pane
+
 ![auth authorization](/images/auth-authorization.PNG)
 
-#### 3.1.2 Click on the "On" button under App Service Authentication
+Click on the "On" button under App Service Authentication
+
 ![auth authorization](/images/auth2.PNG)
 
-#### 3.1.3 Select "Login with Azure Active Directory" in the "Action to take when request is not authenticated" drop down and click on "Azure Active Directory" under "Authentication Providers"
+Select "Login with Azure Active Directory" in the "Action to take when request is not authenticated" drop down and click on "Azure Active Directory" under "Authentication Providers"
+
 ![auth authorization](/images/auth3.PNG)
 
-#### 3.1.2 Click on "Express" > click on "Creat New AD App" and click "OK"
+Click on "Express" > click on "Creat New AD App" and click "OK"
+
 ![auth authorization](/images/auth4-2.PNG)
 
-This will create a new AD App for your Web API and turn on Authentication for your Web API. Now go back to the browser and try to access the url for the Web APP. You will be prompted to enter the crendentials for the Web API.
+This will create a new AD App for your Web API and turn on Authentication for your Web API. 
+
+### 3.1 Verify AD Authentication is activated.
+
+Go back to the browser and try to access the url for the Web APP. You will be prompted to enter the crendentials for the Web API.
 
 ![auth authorization](/images/auth5.PNG)
 
@@ -191,20 +205,19 @@ Navigate to your Web API > click on Authentication / Authorization > Click on Au
 
 ### 4.2 Create an Azure AD Application for the Web API client
 
-#### 4.2.1 create client app
 Navigate to your Azure portal > click on All Services(in the left pane) > click on Identity > click on Azure Active Directory > click on App registrations > Click on New application registration > enter Application name , leave the application type as "Web App / API" , enter the sign-on url as http://localhost (thid doesnt have to be real) > click on create
 
 ![client app](/images/client-app.PNG)
 
 
-#### 4.2.2 Get  Azure AD application ID for the client Application
+### 4.3 Get  Azure AD application ID for the client Application
 
 Navigate to your Azure AD in the portal > click on App registrations > click on the Azure AD client application you just created and note down the application id.
 
 ![client app id](/images/client-appid.PNG)
 
 
-#### 4.2.3 Get client secret for the client Application
+### 4.4 Get client secret for the client Application
 
 Navigate to your client App in Azure AD > click on settings > click on Keys > Enter a key name and pick a duration > click on save. 
 
@@ -214,33 +227,34 @@ This will generate a new secret. You will have to note down the secret before yo
 
 ![client secret step2](/images/client-secret-generated.PNG)
 
-#### 4.2.4 Get the Azure AD token URL
+#### 4.5 Get the Azure AD token URL
 
 Navigate to Azure AD in your Azure Portal > Click on App Registrations > click on Endpoints. Copy the Token URL.
 
 ![token url](/images/token-endpoint.PNG)
 
-#### 4.2.5 Get the bearer token
+### 4.6 Get the bearer token
 
 Open Postman for windows > click on New Request > enter the required values (create collection if needed) > click save.
 
 ![new postman request](/images/new-postman-req.PNG)
 
 Click the dropdown and select "POST". enter the token url copied in step 4.2.4 in the URL field. 
-Click on Body and select the x-www-form-urlencoded radio button. Enter the following key value pairs in the form fields as shown in the screenshot below
-key: grant_type , value: "client_credentials"
-key: client_id, value: Azure AD Applciation id of the client application from step 4.2.2
-key: resource, value : Azure AD Application id of the Web API from step 4.1
-key: client_secret, value: client secret of the client application from step 4.2.3
 
-Click on Send. You should get the Bearer token in the response as shown below
-![bearer token](/images/postman-gettoken.png)
+Click on Body and select the x-www-form-urlencoded radio button. 
 
-Copy the bearer token returned in the response
+Enter the following key value pairs in the form fields as shown in the screenshot below
+
+* key: grant_type , value: "client_credentials"
+* key: client_id, value: Azure AD Applciation id of the client application from step 4.2.2
+* key: resource, value : Azure AD Application id of the Web API from step 4.1
+* key: client_secret, value: client secret of the client application from step 4.2.3
+
+Click on Send. You should get the Bearer token as shown below.Copy the bearer token returned in the response
 
 ![bearer token 2](/images/bearer-token-2.PNG)
 
-###  4.2.6 Make an API call to your Web API
+###  4.7 Make an API call to your Web API
 Open a new Request in Postman > Now select "Get" from the drop down > Enter the Web API URL (eg.https://retailapixxx.azurewebsites.net/api/values) in the url field
 
 Click on "Authorization" and select "Bearer Token" from the "TYPE" dropdown. Enter the bearer token copied in the previous step.
